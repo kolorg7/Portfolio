@@ -8,10 +8,11 @@
     justify-content: space-between;
     align-items: center;
     height: 340px;
+    color: $text-color;
     &__divider {
         width: 2px;
         height: 70px;
-        background-color: #000;
+        background-color: $text-color;
     }
     &__text {
         height: 150px;
@@ -22,6 +23,13 @@
             width: 150px;
             font-weight: bold;
             font-size: 16px;
+        }
+    }
+    &__link {
+        svg {
+            path {
+                fill: $text-color;
+            }
         }
     }
 }
