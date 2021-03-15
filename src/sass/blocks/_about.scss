@@ -1,28 +1,26 @@
 .about {
-    min-height: 100vh;
-    background-color: #001d2d;
-    .grid-container {
+    background-color: #06090f;
+    &__wrapper {
         padding: 120px 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 220px 130px auto;
+        grid-template-rows: minmax(220px, auto) minmax(130px, auto);
         grid-template-areas: "my_photo about about"
                              "my_photo web mobile"
                              "my_photo design .";
     }
+    &__photo {
+        width: 100px;
+    }
     &__block {
         margin-left: 70px;
     }
-    &__divider {
-        width: 60px;
-        height: 2px;
-        border: 2px solid $main-color;
-    }
-    &__descr {
+    &__text {
         font-size: 14px;
         margin-top: 20px;
+        margin-bottom: 0;
     }
-    &__item {
+    &__skills {
         display: flex;
         margin: 40px 0 0 70px;
         position: relative;
@@ -31,15 +29,15 @@
         &:before {
             top: 0;
         }
-        &__descr {
-            font-size: 12px;
-            line-height: 18px;
-        }
     }
-    &__header {
-        margin-bottom: 6px;
+    &__skill {
+        font-size: 12px;
+        line-height: 18px;
     }
-    &__subtitle {
+    &__skill-text {
+        margin-top: 6px;
+    }
+    &__title {
         position: relative;
         z-index: 2;
         padding-left: 12px;
@@ -52,7 +50,7 @@
             padding: 12px 20px 0 20px;
         }
     }
-    &__title {
+    &__subtitle {
         line-height: 60px;
         margin-top: 6px;
     }
