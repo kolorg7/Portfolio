@@ -15,4 +15,18 @@
         font-size: 48px;
         line-height: 60px;
     }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        padding: 5px 0 6px 0;
+        @include before_circle;
+        &:before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }
