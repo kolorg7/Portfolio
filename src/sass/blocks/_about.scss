@@ -39,9 +39,8 @@
     }
     &__title {
         position: relative;
-        z-index: 2;
         padding-left: 12px;
-        margin-top: 6px;
+        margin-top: 10px;
         @include before_circle;
     }
     &__svg {
