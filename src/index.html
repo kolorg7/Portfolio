@@ -72,7 +72,7 @@
                     </a>
                 <a href="#"><img src="icons/social/instagram_straight.svg" alt="instargam">
                     </a>
-                <a href="#"><img src="icons/social/facebook.svg" alt="facebook">
+                <a href="#"><img src="icons/social/facebook_straight.svg" alt="facebook">
                     </a>
             </div>
         </div>
@@ -88,7 +88,7 @@
         <div class="container">
             <div class="title title_fz16 promo__subtitle">Меня зовут Эллиот Алдерсон</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик <br>
-                 из города Казань</h1>
+                 из города Лос-Анджелес</h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>
                 <a href="#" class="promo__link">Про меня</a>
@@ -395,21 +395,25 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input  name='name' id='name' type="text">
+                            <input required name='name' id='name' type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">
                                 Отправить сообщение
                             </button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>

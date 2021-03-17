@@ -4,7 +4,7 @@
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
     &__title {
-        width: 535px;
+        width: auto;
         margin-top: 10px;
     }
     &__subtitle {
@@ -21,10 +21,10 @@
         margin-top: 25px;
     }
     &__link {
-        color: $text-color;
+        color: #000;
         font-weight: bold;
         &:hover {
-            color: $text-color;
+            color: #000;
             text-decoration: none;
         }
     }
