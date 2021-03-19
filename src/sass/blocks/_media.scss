@@ -43,6 +43,31 @@
             }
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: center;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 368px 455px;
+            column-gap: 50px;
+        }
+        &__form {
+            grid-template: 45px 45px 190px 45px / 455px;
+        }
+        &__triggers {
+            grid-column: unset;
+        }
+        &__textarea {
+            grid-column: unset;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -74,6 +99,25 @@
         &__wrapper {
             grid-template-columns: repeat(2,270px);
             grid-template-rows: repeat(4,minmax(270px,auto));
+        }
+    }
+    .price {
+        &__wrapper {
+            padding: 60px 0 120px 0;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0 0 50px 0;
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+        &__form {
+            grid-template: 45px 45px 190px 45px / 380px;
+        }
+        &__btn {
+            padding: 1px;
+            font-size: 12px;
         }
     }
 }
@@ -132,6 +176,47 @@
             margin-top: 15px;
         }
     }
+    .portfolio {
+        &__wrapper {
+            row-gap: 20px;
+            padding: 40px 0;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 345px);
+            justify-content: center;
+            padding: 40px 0 40px 0;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 380px;
+            justify-content: center;
+            #contacts__photo {
+                display: none;
+            }
+        }
+        &__form {
+            grid-template: 45px 45px 190px 101px / 380px;
+        }
+        &__triggers {
+            grid-template-columns: 219px;
+            grid-template-rows: 36px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+        &__policy {
+            justify-content: center;
+            grid-row: 1;
+            span {
+                width: 180px;
+            }
+        }
+        &__btn {
+            width: 219px;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -178,6 +263,24 @@
             &-wrapper {
                 grid-template-columns: 303px;
             }
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__form {
+            grid-template: 45px 45px 145px 101px/300px;
         }
     }
 }
